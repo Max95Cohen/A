@@ -1,0 +1,18 @@
+$colorWhite: #fff;
+$colorWhiteGrey: #eee;
+$colorGrey: #777;
+
+$colorGreen: #1b1;
+$colorBlue: #19f;
+
+$size: 20px;
+
+input[type="radio"] {
+  -webkit-appearance: none;
+
+  background: $colorWhite;
+  border: 4px solid $colorGreen;
+  border-radius: 50%;
+  height: $size;
+  width: $size;
+}

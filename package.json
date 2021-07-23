@@ -1,0 +1,22 @@
+{
+  "name": "a",
+  "version": "0.1.0",
+  "description": "A style sheets for web pages",
+  "main": "index.js",
+  "scripts": {
+    "style": "scss --no-source-map --style compressed a.scss:a.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Max95Cohen/A.git"
+  },
+  "keywords": [
+    "A"
+  ],
+  "author": "Max_Cohen",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Max95Cohen/A/issues"
+  },
+  "homepage": "https://github.com/Max95Cohen/A#readme"
+}
