@@ -4,7 +4,7 @@
   "description": "A style sheets for web pages",
   "main": "index.js",
   "scripts": {
-    "style": "scss --no-source-map --style compressed a.scss:a.css"
+    "style": "scss --no-source-map --style compressed source/app.scss:dist/app.css"
   },
   "repository": {
     "type": "git",
