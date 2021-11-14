@@ -1,0 +1,40 @@
+@import "variables";
+
+@each $suffix, $property in (l, left), (n, none), (r, right) {
+  .f#{$suffix} {
+    float: $property;
+  }
+}
+
+.ffm {
+  font-family: monospace;
+}
+
+@each $prefix in m, p {
+  @each $suffix, $propertyType in (b, bottom), (l, left), (r, right), (t, top) {
+    .#{$prefix}#{$suffix} {
+      margin-#{$propertyType}: $margin;
+    }
+  }
+}
+
+
+@each $prefix in m, p {
+  @each $suffix, $propertyType in (b, bottom), (l, left), (r, right), (t, top) {
+    .#{$prefix}#{$suffix}#{$marginLittle} {
+      margin-#{$propertyType}: #{$marginLittle}px;
+    }
+  }
+}
+
+@each $suffix, $property in (c, center), (l, left), (r, right) {
+  .ta#{$suffix} {
+    text-align: $property;
+  }
+}
+
+@each $suffix, $property in (u, uppercase), (l, lowercase) {
+  .tt#{$suffix} {
+    text-transform: $property;
+  }
+}

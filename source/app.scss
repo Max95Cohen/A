@@ -1,50 +1,59 @@
-$colorWhite: #fff;
-$colorWhiteGrey: #eee;
-$colorGrey: #777;
-
-$colorGreen: #1b1;
-$colorBlue: #19f;
-
-$fontFamily: Ubuntu, Roboto, 'Roboto Regular', sans-serif;
-$fontHeight: 24px;
-$fontSize: 14px;
-
-$font: 400 #{$fontSize}/#{$fontHeight} $fontFamily;
-
-$margin: 10px;
+@import "fonts";
+@import 'variables';
 
 * {
   outline: none;
 }
 
-html, body {
+a {
+  &:active,
+  &:link,
+  &:visited {
+    color: $colorLink;
+    text-decoration: none;
+  }
 
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 body {
+  background: $colorBackground;
+  color: $colorText;
   font: $font;
+  //font-family: RR, Roboto, "Robot Regular", sans-serif;
+  //font-size: $fontSize;
   margin: $margin;
 }
 
 br {
+}
 
+iframe {
+  border: 0;
 }
 
 p {
+  line-height: $fontHeight;
   margin: $margin 0;
+
+  label {
+    display: inline-block;
+  }
 }
 
 td {
   vertical-align: top;
 }
 
-$sizes:
-  'h1' 28px 28px,
-  'h2' 24px 24px,
-  'h3' 18px 18px,
-  'h4' 14px 14px,
-  'h5' 12px 12px,
-  'h6' 10px 10px;
+$sizes: h1 28px 28px,
+h2 24px 24px,
+h3 18px 18px,
+h4 14px 14px,
+h5 12px 12px,
+h6 10px 10px;
 
 @each $name, $size, $height in $sizes {
   #{$name} {
@@ -54,4 +63,58 @@ $sizes:
   }
 }
 
+@import "div";
 @import "forms";
+@import "table";
+@import "helpers";
+
+
+/*div.enter {
+  margin: auto;
+  width: 150px;
+}*/
+
+/*p {
+  margin-bottom: 10px;
+}*/
+
+/*div.textarea {
+  padding-right: 10px;
+}*/
+
+
+/*h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}*/
+
+
+/*.loading, .loading:focus, .loading:hover {
+  background: #1fbfff url(a.gif) no-repeat scroll center center !important;
+  border: 1px solid #1f9fdf !important;
+  color: transparent !important;
+}
+
+.loadingtext, .loadingtext:focus, .loadingtext:hover {
+  background: url(b.gif) no-repeat scroll center center !important;
+  color: transparent !important;
+}*/
+
+/*.inactive, .inactive:focus, .inactive:hover {
+  background: #7fbf7f !important;
+  border: 1px solid #7f9f7f !important;
+  color: #efefef !important;
+  cursor: default !important;
+}*/
+
+/*.cancel {
+  position: relative;
+  top: 5px;
+}*/

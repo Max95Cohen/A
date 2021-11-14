@@ -1,0 +1,12 @@
+$fontFamily: Ubuntu, 'Ubuntu Regular', Roboto, 'Roboto Regular', RR, sans-serif;
+$fontHeight: 24px;
+$fontSize: 14px;
+
+$font: 400 #{$fontSize}/#{$fontHeight} $fontFamily;
+
+$margin: 10px;
+$marginLittle: 4px;
+
+$opacity: .5;
+
+@import "colorVariables";

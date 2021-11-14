@@ -1,0 +1,13 @@
+@import "variables";
+
+table {
+  border: 0;
+  border-bottom: 1px solid $colorGreyWhite;
+  border-collapse: collapse;
+}
+
+td, th {
+  font-size: $fontSize;
+  line-height: $fontSize;
+  padding: $margin 2px;
+}

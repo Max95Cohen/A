@@ -1,0 +1,30 @@
+@import 'variables';
+
+div {
+  &#first,
+  &#background,
+  &#preload {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  &#first {
+    background: $colorWhite;
+    z-index: 99999;
+  }
+
+  &#background {
+    background: rgba(0, 0, 0, $opacity);
+    z-index: 999;
+  }
+
+  &#preload {
+    height: 0;
+    bottom: 0;
+    visibility: hidden;
+    width: 0;
+  }
+}
