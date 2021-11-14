@@ -10,6 +10,10 @@
   font-family: monospace;
 }
 
+.oh {
+  overflow: hidden;
+}
+
 @each $prefix in m, p {
   @each $suffix, $propertyType in (b, bottom), (l, left), (r, right), (t, top) {
     .#{$prefix}#{$suffix} {
@@ -37,4 +41,12 @@
   .tt#{$suffix} {
     text-transform: $property;
   }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.hide {
+  display: none !important;
 }
