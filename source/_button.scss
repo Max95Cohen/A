@@ -85,14 +85,14 @@ label.button {
 }
 
 select {
-  border-color: $borderColorTextRGBA;
+  //border-color: $borderColorTextRGBA;
   padding: 2px 12px 2px 2px;
   min-width: 120px;
 
-  &:not(:disabled) {
+  /*&:not(:disabled) {
     &:focus,
     &:hover {
       background-color: $colorWhiteGrey;
     }
-  }
+  }*/
 }
