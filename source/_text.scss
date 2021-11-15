@@ -1,0 +1,47 @@
+@import "variables";
+
+input[type="number"],
+input[type="password"],
+input[type="text"],
+textarea {
+  background: $colorWhite;
+  border: $borderWidth solid $borderColorTextRGBA;
+  box-shadow: inset $boxShadowText;
+  color: $colorText;
+  padding: 4px;
+  transition: border-color .3s, color .3s;
+  width: 140px;
+
+  &:not(:read-only),
+  &:not(:disabled ) {
+    &:focus,
+    &:hover {
+      background: $colorWhite;
+      border: $borderWidth solid $colorBlue2;
+      color: $colorBlue3;
+    }
+  }
+
+  &:disabled {
+    //background: $colorWhiteDark;
+    //border-color: $borderColorTextRGBA;
+    color: $colorGrey;
+    opacity: $formElementDisableOpacity;
+  }
+
+  &:read-only {
+    color: $colorGrey;
+  }
+}
+
+input[type="password"] {
+  letter-spacing: 4px;
+  padding-left: 8px;
+  padding-right: 2px;
+}
+
+textarea {
+  height: 100px;
+  line-height: 20px;
+  resize: none;
+}

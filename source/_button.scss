@@ -1,0 +1,98 @@
+@import "variables";
+
+a.button,
+button,
+input[type="button"],
+input[type="submit"],
+label.button,
+select {
+  background: $colorGreen;
+  border: $borderWidth solid $borderColorButtonRGBA;
+  box-shadow: $boxShadowButton;
+  color: $colorWhiteGrey;
+  cursor: pointer;
+  line-height: $fontSize;
+  padding: 4px 12px;
+  transition: background-color .3s, border-color .3s, color .3s;
+
+  &:not(:disabled) {
+    &:focus,
+    &:hover {
+      background: $colorBlue;
+      border-color: $borderColorButtonRGBA;
+      color: $colorWhite;
+    }
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: $formElementDisableOpacity;
+  }
+}
+
+a.button,
+button,
+input[type="button"],
+input[type="submit"],
+label.button {
+  -webkit-appearance: none;
+}
+
+button.danger,
+button.slave,
+label.button {
+  padding: 4px 8px;
+}
+
+button.danger {
+  background: $colorRed;
+  border: $borderWidth solid $borderColorButtonRGBA;
+
+  &:not(:disabled) {
+    &:focus,
+    &:hover {
+      background: $colorRedWhite;
+      border-color: $borderColorButtonRGBA;
+    }
+  }
+}
+
+button.slave,
+label.button,
+select {
+  background: $colorWhiteDark;
+  border-color: $borderColorButtonRGBA;
+  color: $colorGreyDark;
+
+  &:not(:disabled) {
+    &:focus,
+    &:hover {
+      background: $colorYellow;
+      border-color: $borderColorButtonRGBA;
+      color: $colorGreyDark;
+    }
+  }
+}
+
+label.button {
+  display: inline-block;
+
+  &.disabled {
+    background: $colorWhiteDark !important;
+    cursor: default;
+    opacity: $formElementDisableOpacity;
+  }
+}
+
+select {
+  border-color: $borderColorTextRGBA;
+  padding: 2px 12px 2px 2px;
+  min-width: 120px;
+
+  &:not(:disabled) {
+    &:focus,
+    &:hover {
+      background-color: $colorWhiteGrey;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "variables";
+
+$size: 20px;
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+
+  background: $colorWhite;
+  border: $borderRadius solid $colorWhiteDark;
+  box-shadow: inset $boxShadowText;
+  box-sizing: border-box;
+  height: $size;
+  margin: 2px $marginLittle 0 0;
+  transition: background-color .3s;
+  vertical-align: top;
+  width: $size;
+
+  &:not(:disabled) {
+    &:focus,
+    &:hover {
+      background: $colorBlue;
+      cursor: pointer;
+    }
+  }
+
+  &:checked {
+    background: $colorGreen;
+    border-color: $colorWhiteDark;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: $formElementDisableOpacity;
+
+    &:checked {
+      background: $colorGreyWhite;
+    }
+  }
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
