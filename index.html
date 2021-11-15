@@ -1,7 +1,6 @@
 <meta charset="utf-8">
 <link href="/dist/app.css" rel="stylesheet" type="text/css">
 
-<body>
 
 <h1>Hello, how are you?</h1>
 <p>Мен бала күнімде естуші едім, біздің қазақ сартты көрсе, күлуші еді «енеңді ұрайын, кең қолтық, шүлдіреген тәжік, Арқадан үй төбесіне саламын деп, қамыс артқан, бұтадан қорыққан, көз көргенде
@@ -42,10 +41,6 @@
 
 <br>
 
-<p>Hello, how are you?</p>
-
-<br>
-
 <p>Орысқа қараған соң да, орыстың өнерлерін бізден олар көп үйреніп кетті. Үлкен байлар да, үлкен молдалар да, ептілік, қырмызылық, сыпайылық - бәрі соларда. Ноғайға қарасам, солдаттыққа да шыдайды,
     кедейлікке де шыдайды, қазаға да шыдайды, молда, медресе сақтап, дін күтуге де шыдайды.</p>
 <p>Еңбек қылып, мал табудың да жөнін солар біледі, салтанат, әсем де соларда.</p>
@@ -58,13 +53,15 @@
     <button disabled>Button</button>
 </p>
 <p>
-    <button class="exit">Button</button>
-    <button class="exit" disabled>Button</button>
+    <button class="danger">Button</button>
+    <button class="danger" disabled>Button</button>
 </p>
 <p>
-    <button class="grey">Button</button>
-    <button class="grey" disabled>Button</button>
+    <button class="slave">Button</button>
+    <button class="slave" disabled>Button</button>
 </p>
+
+<br>
 
 <p>
     <label>
@@ -84,6 +81,8 @@
     </label>
 </p>
 
+<br>
+
 <p>
     <label>
         <input name="checkbox" type="checkbox" value="1"> Checkbox 1
@@ -102,40 +101,53 @@
     </label>
 </p>
 
+<br>
+
 <p>
     <label>
         <span class="text">Text</span>
         <input name="text" type="text" value="Text 1">
     </label>
+</p>
 
-    <br>
-
+<p>
     <label>
         <span class="text">Text</span>
         <br>
         <input readonly name="text" type="text" value="Text 2">
     </label>
-
-    <br>
-
-    <label>
-        <input disabled name="text" type="text" value="Text 2">
-    </label>
 </p>
 
 <p>
     <label>
-        <input name="password" type="password" value="Password 1">
-    </label>
-
-    <label>
-        <input readonly name="password" type="password" value="Password 2">
-    </label>
-
-    <label>
-        <input disabled name="password" type="password" value="Password 2">
+        <input disabled name="text" type="text" value="Text 2">
+        <span class="text">Text</span>
     </label>
 </p>
+
+<br>
+
+<p>
+    <label>
+        <span class="text">Password</span>
+        <input name="password" type="password" value="Password 1">
+    </label>
+</p>
+<p>
+    <label>
+        <span class="text">Password</span>
+        <br>
+        <input readonly name="password" type="password" value="Password 2">
+    </label>
+</p>
+<p>
+    <label>
+        <input disabled name="password" type="password" value="Password 2">
+        <span class="text">Password</span>
+    </label>
+</p>
+
+<br>
 
 <p>
     <label>
@@ -151,12 +163,53 @@
     </label>
 </p>
 
+<br>
+
 <p>
     <label class="button" for="file" tabindex="0">Upload</label>
-    <b id="selected"></b>
+    <b class="ml4" id="selected">Selected.file</b>
+    <input accept="image/gif,image/jpeg,image/png" id="file" name="file" type="file" tabindex="-1">
+</p>
+<p>
+    <label class="button disabled" tabindex="0">Upload</label>
+    <b class="ml4" id="selected_">Selected.file</b>
 </p>
 
-<input accept="image/gif,image/jpeg,image/png" id="file" name="file" type="file" tabindex="-1">
+<br>
+
+<p>
+    <span class="text">Select</span>
+    <select name="select">
+        <option value="1">Almaty</option>
+        <option value="2">Astana</option>
+        <option value="3">Qyzylorda</option>
+        <option value="4">Antalya</option>
+        <option value="5">New York</option>
+    </select>
+</p>
+<p>
+    <span class="text">Select</span>
+    <br>
+    <select name="select">
+        <option value="1">Almaty</option>
+        <option value="2">Astana</option>
+        <option value="3">Qyzylorda</option>
+        <option value="4">Antalya</option>
+        <option value="5">New York</option>
+    </select>
+</p>
+<p>
+    <select disabled name="select">
+        <option value="1">Almaty</option>
+        <option value="2">Astana</option>
+        <option value="3">Qyzylorda</option>
+        <option value="4">Antalya</option>
+        <option value="5">New York</option>
+    </select>
+    <span class="text">Select</span>
+</p>
+
+<br>
 
 <table border="1">
     <thead>
