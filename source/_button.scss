@@ -4,15 +4,15 @@ a.button,
 button,
 input[type="button"],
 input[type="submit"],
-label.button,
-select {
+label.button {
   background: $colorGreen;
   border: $borderWidth solid $borderColorButtonRGBA;
   box-shadow: $boxShadowButton;
   color: $colorWhiteGrey;
   cursor: pointer;
-  line-height: $fontSize;
-  padding: 4px 12px;
+  height: $formElementHeight;
+  line-height: $fontHeight;
+  padding: 0 12px;
   transition: background-color .3s, border-color .3s, color .3s;
 
   &:not(:disabled) {
@@ -41,7 +41,7 @@ label.button {
 button.danger,
 button.slave,
 label.button {
-  padding: 4px 8px;
+  padding: 0 8px;
 }
 
 button.danger {
@@ -58,8 +58,7 @@ button.danger {
 }
 
 button.slave,
-label.button,
-select {
+label.button {
   background: $colorWhiteDark;
   border-color: $borderColorButtonRGBA;
   color: $colorGreyDark;
@@ -82,17 +81,4 @@ label.button {
     cursor: default;
     opacity: $formElementDisableOpacity;
   }
-}
-
-select {
-  //border-color: $borderColorTextRGBA;
-  padding: 2px 12px 2px 2px;
-  min-width: 120px;
-
-  /*&:not(:disabled) {
-    &:focus,
-    &:hover {
-      background-color: $colorWhiteGrey;
-    }
-  }*/
 }

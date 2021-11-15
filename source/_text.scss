@@ -3,12 +3,15 @@
 input[type="number"],
 input[type="password"],
 input[type="text"],
+select,
 textarea {
   background: $colorWhite;
   border: $borderWidth solid $borderColorTextRGBA;
   box-shadow: inset $boxShadowText;
   color: $colorText;
-  padding: 4px;
+  height: $formElementHeight;
+  line-height: $fontHeight;
+  padding: 0 4px;
   transition: border-color .3s, color .3s;
   width: 140px;
 
@@ -23,12 +26,15 @@ textarea {
   }
 
   &:disabled {
-    //background: $colorWhiteDark;
-    //border-color: $borderColorTextRGBA;
     color: $colorGrey;
     opacity: $formElementDisableOpacity;
   }
+}
 
+input[type="number"],
+input[type="password"],
+input[type="text"],
+textarea {
   &:read-only {
     color: $colorGrey;
   }
@@ -40,8 +46,13 @@ input[type="password"] {
   padding-right: 2px;
 }
 
+select {
+  padding: 0 16px 0 2px;
+}
+
 textarea {
   height: 100px;
   line-height: 20px;
   resize: none;
+  vertical-align: top;
 }
