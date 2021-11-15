@@ -1,3 +1,14 @@
+$borderColorButtonRGBA: rgba(127, 127, 127, .1);
+$borderColorTextRGBA: rgba(127, 127, 127, .2);
+
+$borderRadius: 3px;
+$borderWidth: 2px;
+
+$boxShadowButton: 0 2px 3px rgba(127, 127, 127, .1);
+$boxShadowText: 0 1px 3px rgba(0, 0, 0, .5);
+
+$formElementDisableOpacity: .2;
+
 $fontFamily: Ubuntu, 'Ubuntu Regular', Roboto, 'Roboto Regular', RR, sans-serif;
 $fontHeight: 24px;
 $fontSize: 14px;
@@ -5,7 +16,7 @@ $fontSize: 14px;
 $font: 400 #{$fontSize}/#{$fontHeight} $fontFamily;
 
 $margin: 10px;
-$marginLittle: 4px;
+$marginLittle: 4;
 
 $opacity: .5;
 
