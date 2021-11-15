@@ -151,15 +151,21 @@
 
 <p>
     <label>
+        <span class="text">Password</span>
         <textarea name="textarea">Hello, how are you?</textarea>
     </label>
-
+</p>
+<p>
     <label>
+        <span class="text">Password</span>
+        <br>
         <textarea readonly name="textarea">Hello, how are you?</textarea>
     </label>
-
+</p>
+<p>
     <label>
         <textarea disabled name="textarea">Hello, how are you?</textarea>
+        <span class="text">Password</span>
     </label>
 </p>
 
@@ -171,7 +177,7 @@
     <input accept="image/gif,image/jpeg,image/png" id="file" name="file" type="file" tabindex="-1">
 </p>
 <p>
-    <label class="button disabled" tabindex="0">Upload</label>
+    <label class="button disabled">Upload</label>
     <b class="ml4" id="selected_">Selected.file</b>
 </p>
 
@@ -234,3 +240,18 @@
     </tr>
     </tbody>
 </table>
+
+<p>
+    <button>Button</button>
+    <button class="danger">Button</button>
+    <button class="slave">Button</button>
+    <select name="select">
+        <option value="1">Almaty</option>
+    </select>
+    <label>
+        <input name="radio" type="radio" value="1"><span>Radio 1</span>
+    </label>
+    <label>
+        <input name="text" type="text" value="Text 2">
+    </label>
+</p>
