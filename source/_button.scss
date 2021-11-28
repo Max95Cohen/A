@@ -75,6 +75,8 @@ label.button {
 
 label.button {
   display: inline-block;
+  height: 26px;
+  line-height: 26px;
 
   &.disabled {
     background: $colorWhiteDark !important;
