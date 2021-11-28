@@ -10,7 +10,6 @@ label.button {
   box-shadow: $boxShadowButton;
   color: $colorWhiteGrey;
   cursor: pointer;
-  height: $formElementHeight;
   line-height: $fontHeight;
   padding: 0 12px;
   transition: background-color .3s, border-color .3s, color .3s;
@@ -75,8 +74,6 @@ label.button {
 
 label.button {
   display: inline-block;
-  height: 26px;
-  line-height: 26px;
 
   &.disabled {
     background: $colorWhiteDark !important;
