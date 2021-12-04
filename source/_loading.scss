@@ -1,0 +1,36 @@
+@import "variables";
+
+$size: 32px;
+
+#loading {
+  background: rgba(0, 0, 0, .2);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  div,
+  span {
+    background: $colorWhite;
+    border-radius: 50%;
+    border: 0;
+    height: $size;
+    width: $size;
+  }
+
+  div {
+    margin: 0 auto;
+    padding: 4px;
+    position: relative;
+    top: 10%;
+  }
+
+  span {
+    border: 2px solid $colorWhiteGrey;
+    border-top-color: $colorBlue;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+  }
+}
