@@ -35,6 +35,8 @@ input[type="number"],
 input[type="password"],
 input[type="text"],
 textarea {
+  box-sizing: border-box;
+
   &:read-only {
     color: $colorGrey;
   }
@@ -52,7 +54,6 @@ select {
 
 textarea {
   height: 100px;
-  line-height: 20px;
   resize: none;
   vertical-align: top;
 }
