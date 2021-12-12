@@ -7,7 +7,7 @@ input[type="radio"] {
   -webkit-appearance: none;
 
   background: $colorWhite;
-  border: $borderRadius solid $colorWhiteDark;
+  border: $borderWidth solid $colorWhiteDark;
   box-shadow: inset $boxShadowText;
   box-sizing: border-box;
   height: $size;
@@ -16,17 +16,27 @@ input[type="radio"] {
   vertical-align: top;
   width: $size;
 
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+
   &:not(:disabled) {
     &:focus,
     &:hover {
-      background: $colorBlue;
-      cursor: pointer;
+      border-color: $colorBlue;
     }
   }
 
   &:checked {
     background: $colorGreen;
     border-color: $colorWhiteDark;
+
+    &:focus,
+    &:hover {
+      background: $colorBlue;
+      border-color: $colorWhiteDark;
+    }
   }
 
   &:disabled {
